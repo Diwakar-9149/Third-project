@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0
+}
+.row{
+    display:flex;
+    width:100%;
+}
+.blog-content{
+    width:80%;
+    margin:0px auto;
+    padding:60px 0;
+}
+.blog-left{
+    flex-basis: 65%;
+    display: flex;
+    flex-direction: column; /* Image upar, paragraph neeche */
+    align-items: flex-start;
+}
+.blog-left img{
+    width:70%;
+    display: block;;
+}
+.blog-left h2{
+    color:#222;
+    font-weight:600;
+    margin:30px 0;
+}
+.blog-left p{
+    width:80%;
+    padding:0;
+    color:#999;
+    text-align: justify;
+    line-height: 1.6;
+    
+}
+.blog-right{
+    flex-basis: 35%;
+}
+.blog-right h3{
+    background:#f44336;
+    color:#fff;
+    padding:7px 0;
+    font-size:16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.blog-right div{
+    display:flex;
+    text-align:center;
+    align-items: center;
+    justify-content:space-between;
+    color:#555;
+    padding:8px;
+    box-sizing:border-box;
+}
+/* Comment Box Styles */
+.comment-box {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.comment-box h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Form Inputs */
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 12px 15px;
+    font-size: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+/* Focus Effects */
+.comment-form input:focus,
+.comment-form textarea:focus {
+    border-color: #ff4b4b;
+    box-shadow: 0 0 5px rgba(255, 75, 75, 0.4);
+}
+
+/* Submit Button */
+.hero-btn.red-btn {
+    display: inline-block;
+    background: #ff4b4b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.hero-btn.red-btn:hover {
+    background: #e63939;
+    transform: translateY(-2px);
+}

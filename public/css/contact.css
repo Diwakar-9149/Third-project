@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+}
+.location{
+    width:80%;
+    margin:auto;
+    padding:80px 0;
+}
+.location iframe{
+    width:100%;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+}
+.contact-us{
+    width:80%;
+    margin-top: 50px;;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    
+}
+.contact-col div{
+    display:flex;
+    align-items:center;
+    margin-bottom:40px;
+}
+.contact-col div .fa{
+    font-size:28px;
+    color:#f44336;
+}
+.contact-col div p{
+    padding-top:5px;
+}
+.contact-col div h5{
+    font-size:20px;
+    margin-bottom:5px;
+    color:#555;
+    font-weight:400;
+}
+.contact-col input,
+.contact-col textarea{
+    width:100%;
+    padding:12px;
+    margin:15px 0 15px 50px;
+    border:1px solid #555;
+    outline:none;
+    font-size:16px;
+    border-radius: 10px;
+}
+.hero-btn.red-btn {
+    display: inline-block;
+    background: #ff4b4b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    transition: 0.3s;
+    margin-left:50px;
+}
+
+/* Hover Effect */
+.hero-btn.red-btn:hover {
+    background: #e63939;
+    transform: translateY(-2px);
+}

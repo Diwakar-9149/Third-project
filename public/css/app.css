@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)), url('../image/banner.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}*/
+.header {
+    height: 60vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7)), url("../image/background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  /* navbar at top */
+}
+
+.header-title {
+    color: #fff;
+    font-size: 50px;
+    margin-top:60px;
+}
+nav {
+    display: flex;
+    justify-content: space-between; /* LEFT - RIGHT */
+    align-items: center;            /* vertically center */
+    padding: 50px 6%;               /* spacing */
+    position: absolute;             /* TOP par fix */
+    top: 0;
+    left: 0;
+    width: 100%;                   /* full width */
+    z-index: 1000; 
+    box-sizing: border-box;                 /* image ke upar dikhe */
+}
+
+nav a img {
+    width: 180px; /* 40vh mat use karo, bo bahut bada hota hai */
+}
+
+.nav-links {
+    flex: 1;
+    text-align:right;
+    margin-right:20px;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin: 0 20px;
+    list-style: none;
+    gap:30px;
+}
+
+.nav-links ul li a {
+    color: white;       /* background par visible ho */
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-links ul li a:hover {
+    color: #f44336;
+}
+
+/* Hover underline effect */
+.nav-links ul li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+/*.nav-links ul li a:hover::after {
+    width: 100%;
+     background-color: royalblue;
+    border:1px solid black;
+}*/
+/*footer section*/
+
+@media(max-width:700px) {
+    .cta h1 {
+        font-size: 24px;
+    }
+}
+/*--------foter---*/
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icon i{
+    padding:0 10px 0 10px;
+    color:rgb(0, 255, 38)
+}
+.fa-heart-o{
+    color:red;
+}
