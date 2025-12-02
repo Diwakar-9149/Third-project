@@ -3,7 +3,6 @@
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
 @endsection
-
 @section('header-content')
     <h1 class="header-title">Contact Us</h1>
 @endsection
@@ -38,7 +37,12 @@
                </div>
             </div>
             <div class="contact-col">
-              <form action=" " method="POST" enctype="multipart/form-data">
+                @if(session('success'))
+                 <div class="alert alert-success">
+                 {{ session('success') }}
+            </div>
+              @endif
+              <form action="{{route('contact.store')}}" method="POST" enctype="multipart/form-data">
               @csrf
                 <input type="text" name="name" placeholder="Enter your name" required>
                 <input type="email" name="email" placeholder="Enter your email" required>

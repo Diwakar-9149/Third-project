@@ -55,11 +55,11 @@
             <div class="blog-right">
                 <h3>Post Categories</h3>
                 <div>
-                    <span>Business Analytics</span>
+                   <a href="{{url('business')}}"> <span>Business Analytics</span></a>
                     <span>21</span>
                 </div>
                 <div>
-                    <span>Data Science</span>
+                    <a href="{{url('data')}}"><span>Data Science</span></a>
                     <span>18</span>
                 </div>
                 <div>

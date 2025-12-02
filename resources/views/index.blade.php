@@ -91,18 +91,19 @@
                 @endif
               @foreach($comments as $comment)
               <div class="testimonial-col">
-                    <img src="{{ asset($comment->image ? 'comments/' . $comment->image : 'image/user1.jpg') }}" alt="user image">
-                    <div>
-                        <p>{{ $comment->comment }}</p>  <!-- Dynamic comment -->
-                        <h3>{{ $comment->name }}</h3>
-                    </div>
-                </div>
+                   <img src="{{ $comment->image ? asset('comments/' . $comment->image) : asset('image/user1.jpg') }}" alt="user image">
+                 <div>
+                  <p>{{ $comment->comment }}</p>  <!-- Dynamic comment -->
+                  <h3>{{ $comment->name }}</h3>
+                 </div>
+                </div> 
               @endforeach
             </div>
         </section>
         <!-- Comment Form Section -->
      <section class="comment-form" style="padding: 50px; background-color: gray; text-align:center;width:500px;margin-left:30%;border-radius:10px;">
         <h2 style="margin-bottom: 20px;color:white">Leave a Comment</h2>
+         <!-- ✅ Important: action="/comments" fixes 404 -->
         <form action="{{route('comments.store')}}" method="POST" enctype="multipart/form-data" style="display:inline-block; text-align: left; background-color: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
         @csrf
         <!-- Name Field -->
@@ -121,6 +122,11 @@
         <button type="submit" style="padding: 5px 8px; background-color: #0275d8; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
       </form>
      </section>
+      <!-----------call to action--->
+        <section class="cta">
+            <h1>Enroll for our various online courses <br>Anywhere from the worlds</h1>
+            <a href="{{url('contact')}}" class="hero-btn">Contact US</a>
+        </section>
     @endsection
 
         <!---------comment section end-->

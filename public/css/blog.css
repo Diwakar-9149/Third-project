@@ -44,21 +44,39 @@
     font-size:16px;
     margin-bottom: 20px;
     text-align: center;
+    border-radius: 8px;
 }
 .blog-right div{
     display:flex;
+    border:1px solid gray;
+    margin-top:8px;
+    border-radius:5px;
     text-align:center;
     align-items: center;
     justify-content:space-between;
     color:#555;
     padding:8px;
+    transition:0.3s ease;
     box-sizing:border-box;
+    transition: 0.3s ease, box-shadow 0.3s ease;
+}
+.blog-right div:hover{
+    background:#f44336;
+    color:#fff;
+    transform: translateX(2px);
+    cursor:pointer;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+.blog-right div a{
+    text-decoration:none;
+    color:#555;
 }
 /* Comment Box Styles */
 .comment-box {
     width: 100%;
     max-width: 600px;
-    margin: 40px auto;
+   /* margin: 40px auto;*/
+   margin-top:50px;
     background: #fff;
     padding: 25px 30px;
     border-radius: 10px;
@@ -79,9 +97,9 @@
 .comment-form textarea {
     width: 100%;
     border: 1px solid #ccc;
-    padding: 12px 15px;
+    padding:12px;
     font-size: 15px;
-    border-radius: 6px;
+    border-radius: 10px;
     margin-bottom: 15px;
     outline: none;
     transition: 0.3s ease-in-out;

@@ -129,8 +129,13 @@ nav.fa {
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    transition:transform 0.3s ease;
 }
+.course :hover{
+    transform: translateY(-5px);
+    transition:transform 0.3s ease;
 
+}
 h1 {
     font-size: 36px;
     font-weight: 600;
@@ -207,7 +212,8 @@ h3 {
 }
 
 .layer:hover {
-    background: rgba(226, 0, 0, 0.7);
+    background: pink;
+    background:transparent;
 }
 
 .layer h3 {
